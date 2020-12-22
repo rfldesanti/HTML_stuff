@@ -1,4 +1,6 @@
+/*Here a define the style of the whole page, since every other element is a descendant of the <html> element*/
 html {
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 15px; /*The font size is 15 PIXELS;*/
+    font-family: 'Montserrat', sans-serif; /*This is the family of the font; the information came from the
+    Google Fonts web page;*/
 }
