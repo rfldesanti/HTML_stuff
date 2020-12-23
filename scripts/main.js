@@ -1,2 +1,6 @@
 const myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello world!';
+myHeading.textContent = 'What a troll!';
+
+document.querySelector('img').onclick = function() {
+    alert('Ouch! Stop poking me!');
+}
