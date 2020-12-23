@@ -12,3 +12,12 @@ myImage.onclick = function() {
         myTitle.textContent = 'What a troll!';
     }
 }
+
+let myButton = document.querySelector('button');
+let mySubTitle = document.querySelector('h2');
+
+function setUserName() {
+    let myName = prompt('Please enter your name:');
+    localStorage.setItem('name', myName);
+    mySubTitle.textContent = 'Mozilla is cool,' + myName;
+}
