@@ -18,8 +18,12 @@ let mySubTitle = document.querySelector('h2');
 
 function setUserName() {
     let myName = prompt('Please enter your name:');
-    localStorage.setItem('name', myName);
-    mySubTitle.textContent = 'Mozilla is cool, ' + myName;
+    if (!myName) {
+        setUserName();
+    } else {
+        localStorage.setItem('name', myName);
+        mySubTitle.textContent = 'Mozilla is cool, ' + myName;
+    }
 }
 
 if(!localStorage.getItem('name')){
