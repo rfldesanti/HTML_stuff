@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <!--This comment it is inside a tag that is used to make comments on a HTML document-->
-<!--The tag above - ("DOCTYPE html") - indicates that the document contains HTML mark-up -->
+<!--The tag above - ("!DOCTYPE html") - indicates that the document contains HTML mark-up -->
 <html>
-<!-- The <html> tag is the top-level tag. Every other tag (or element) in an HTML document is a
-    descendant of this tag -->    
+<!-- The <html> tag is the TOP-LEVEL tag. Every other tag (or element) in an HTML document is
+a descendant of this tag -->
     <head>
-    <!--The <head> tag IS A CONTAINER for the head elements and descriptive tags in the document-->
-    <!--The <head> CONTAINER is placed in the beginning of the document and does not get displayed-->
-    <!--The <head> CONTAINER includes METADATA information such document title-->
-    <!--The <head> CONTAINER also includes links to external resources the browser needs to render the page-->
+    <!--The <head> tag IS A CONTAINER for the head elements and descriptive tags in the
+    document-->
+    <!--The <head> CONTAINER is placed in the beginning of the document and does not get
+    displayed-->
+    <!--The <head> CONTAINER includes METADATA information such document title,
+    region sets, etc...-->
+    <!--The <head> CONTAINER also includes links to external resources the browser
+    needs to render the page-->
         <meta charset="UTF-8">
         <!-- The tag <meta charset="UTF=8"> defines the character set that is used-->
-        <!-- The tag <meta> is usually placed right after the <head> tag, since the browser can antecipate 
-            another character set-->
+        <!-- The tag <meta> is usually placed right after the <head> tag, since the 
+        browser can antecipate another character set-->
         <link href="styles/style.css" rel="stylesheet">
+        <!-- The <link> element specifies relationships between th current document
+        and an external resource. It's commonly used to link CSS, as it shown in this 
+        example-->
+        <!-- In this example, the <link> element receive the 'href' attribute, which
+        value specifies the location (URL) of the external resource-->
+        <!-- The 'rel' attribute means 'relationship' and denotes how the item linked
+        by href it is related to the containing document. In this example, the KEYWORD
+        'stylesheet' defines that URL will be used as a stylesheet-->
         <title>My First HTML Page</title>
         <!--The <title> tag specifies the title that is exibed in the browser toolbar-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
-        <!--The <link> tag specifies relationships between the current document and external resoures-->
+        <!-- Here, the 'rel' attribute is used with the 'preconnect' keyword, that 
+        means that the browser can open a connection with the linked website-->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" 
+        rel="stylesheet">
+        <!--The <link> tag specifies relationships between the current document and
+        external resoures-->
         <!--The <link> tag, in this case, it is been used to link to stylesheets-->
         <!-- CSS code: font-family: 'Open Sans', sans-serif;-->
         <!-- Remember to inform the sources that I used to learn the tags-->
@@ -28,12 +44,13 @@
         <h1>A H1 title</h1>
         <!--The <h1> element is a heading element. It goes from 1 to 6-->
         <h2>And now a H2 title</h2>
+        <!--Another 'h' element. This time, a <h2> element - the second major title tag-->
         <img src="images/troll.jpg" alt="Little ornament troll">
+        <!--The <img> element embeds an image to your page. It uses the src (source) 
+        attribute, which contains the path to the image-->
+        <!--The alt(alternative) attribute is a description of the image. It can be used for
+        impaired people or when the image it is not loaded -->
         <p><button>Change user</button></p>
-        <!--The <img> element embeds an image to our page. It uses the src (source) attribute, which contains
-        the path to the image-->
-        <!--The alt(alternative) attribute is a description of the image. It can be used for impaired people
-        or when the image it is not loaded -->
         <p>This is a very ugly troll</p>
         <p>This is a <strong>very ugly</strong> troll</p>
         <!--The <strong> element turn the text inside of it in a bold one-->
