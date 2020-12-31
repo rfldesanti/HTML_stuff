@@ -1,8 +1,9 @@
-/*Here a define the style of the whole page, since every other element is a descendant of the <html> element*/
 html {
+    /*Here I define the style of the whole page, since every other element is a descendant of the
+    <html> element*/
     font-size: 15px; /*The font size is 15 PIXELS;*/
-    font-family: 'Montserrat', sans-serif; /*This is the family of the font; the information came from the
-    Google Fonts web page;*/
+    font-family: 'Montserrat', sans-serif; /*This is the family of the font; the information
+    came from the Google Fonts web page;*/
     background-color: #3D3A45
 }
 
@@ -29,6 +30,12 @@ p, li {
     letter-spacing: 1px;
 }
 
+.text:hover::first-line{
+    font-size: 40px;
+    background-color: cadetblue;
+    border: 5px solid white;
+}
+
 body {
     width: 600px;
     margin: 20px auto;
@@ -42,4 +49,12 @@ img {
     margin: 0 auto;
     width: 200px;
     border: 2px solid white;
+}
+
+a[rel] {
+    background-color: blueviolet;
+}
+
+a:hover {
+    background-color: black;
 }
