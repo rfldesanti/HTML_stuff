@@ -1,6 +1,6 @@
 html {
-    /*Here I define the style of the whole page, since every other element is a descendant of the
-    <html> element*/
+    /*Here I define the style of the whole page, since every other element is a descendant of 
+    the <html> element*/
     font-size: 15px; /*The font size is 15 PIXELS;*/
     font-family: 'Montserrat', sans-serif; /*This is the family of the font; the information
     came from the Google Fonts web page;*/
@@ -8,10 +8,16 @@ html {
 }
 
 h1 {
+    /*Putting some style on h1 selector*/
     font-size: 60px;
     text-align: center;
-    margin: 0;
-    padding: 10px 0;
+    margin: 70px;
+    /*What is 'margin'? Margin is everything beyond a border and the padding of
+    the ascendent element*/
+    padding: 5px 5px;
+    /*What is 'padding'? Padding is the space around the content*/
+    border: 2px solid white;
+    /*And border is the LINE that is outside the padding*/
     color: #4E818E;
     text-shadow: 3px 3px 1px black;
 }
@@ -38,7 +44,7 @@ p, li {
 
 body {
     width: 600px;
-    margin: 20px auto;
+    margin: 5px 60px;
     background-color: #C7EDC0;
     padding: 0px 20px 20px 20px;
     border: 5px solid #F7D9F0;
@@ -46,7 +52,7 @@ body {
 
 img {
     display:block;
-    margin: 0 auto;
+    margin: 20px auto 0;
     width: 200px;
     border: 2px solid white;
 }
