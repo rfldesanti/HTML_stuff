@@ -37,6 +37,16 @@ p, li {
 }
 
 .text:hover::first-line{
+    /*Selecting a class (.text) that is in <p> elements*/
+    /*This selection is a CLASS selection, since the element's name
+    starts with a dot "."*/
+    /*The two points after the selector is a character that informs that this
+    is a PSEUDO-CLASS selection - in this case, selects a STATE of the element, the
+    "hover" is the state when the mouse hover the element*/
+    /*The two points after "hover" (the pseudo-class) means that is a pseudo-element
+    selection - in this case, this selects only a certain part of the element, the
+    first line of the class that is contained on the <p> element*/
+    /*The result is very incredible and exciting!*/
     font-size: 40px;
     background-color: cadetblue;
     border: 5px solid white;
@@ -58,9 +68,13 @@ img {
 }
 
 a[rel] {
+    /*This definition only selects the ATTRIBUTE of an element. In this case,
+    the selection refers to the ATTRIBUTE "rel" of the <a> element*/
     background-color: blueviolet;
 }
 
 a:hover {
+    /*Here, there is another PSEUDO-CLASS selection, where the element <a>
+    will only receive the value of the properties when the mouse hover it*/
     background-color: black;
 }
