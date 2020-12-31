@@ -51,16 +51,26 @@ a descendant of this tag -->
         <!--The alt(alternative) attribute is a description of the image. It can be used for
         impaired people or when the image it is not loaded -->
         <p><button>Change user</button></p>
+        <!--The <p> elemente represents a paragraph. -->
+        <!--The <button> element represents a clickable button-->
         <p>This is a very ugly troll</p>
         <p>This is a <strong>very ugly</strong> troll</p>
         <!--The <strong> element turn the text inside of it in a bold one-->
         <p>Now I'm gonna create some <strong>LISTS</strong></p>
-        <!--Lists can be categorized in two types: ordered<ol> and unordered<ul>-->
+        <!--The 'Lists' can be categorized in two types: ordered<ol> and unordered<ul>-->
         <!--Each item inside a list must receive the <li> element-->
         <p>First, an <strong>unordered list (ul)</strong></p>
         <ul>
             <li>First item</li>
-            <li>Second item</li>
+            <!--The <li> element represents the line inside lists or menus-->
+            <li>Second item
+            <!--Here I'm gonna create a sublist-->
+            <ul>
+                <li>First subitem</li>
+                <li>Second subitem</li>
+                <li>Third subitem</li>
+                </li>
+            </ul>
             <li>Third item</li>
             <li>Fourth item</li>
         </ul>
@@ -68,11 +78,20 @@ a descendant of this tag -->
         <ol>
             <li>Item 1</li>
             <li>Item 2</li>
-            <li>Item 3</li>
+            <li>Item 3
+            <!--Here I'm gonna create another sublist-->
+            <ol>
+                <li>Subitem 1</li>
+                <li>Subitem 2</li>
+                <li>Subitem 3</li>
+                <li>Subitem 4</li>
+                </li>
+            </ol>
             <li>Item 4</li>
         </ol>
         <a href="anywhere">Here is a link to anywhere</a>
+        <!--The <a> (anchor) element creates a hyperlink to anything a URL can address-->
         <script src="scripts/main.js"></script>
+        <!--The <script> element is used to embed executable code or data-->
     </body>
-    
 </html>
