@@ -67,14 +67,14 @@ img {
     border: 2px solid white;
 }
 
-a[rel] {
+a[rel]:hover {
     /*This definition only selects the ATTRIBUTE of an element. In this case,
     the selection refers to the ATTRIBUTE "rel" of the <a> element*/
     background-color: blueviolet;
 }
 
 a:hover {
-    /*Here, there is another PSEUDO-CLASS selection, where the element <a>
+    /*Here, there is another PSEUDO-CLASS selection, where the element <a> 
     will only receive the value of the properties when the mouse hover it*/
     background-color: black;
 }
