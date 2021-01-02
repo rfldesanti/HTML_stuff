@@ -59,15 +59,41 @@ myImage.onclick = function() {
 }
 
 let myButton = document.querySelector('button');
+//Here, a variable called myButton receives the value returned
+//by the propertie querySelector, that returns the HTML element
+//"button"(<button></button>), as it seen early in this code
 let mySubTitle = document.querySelector('h2');
+//The same thing with the variable mySubtitle
 
 function setUserName() {
+//Created a function called "setUserName". This fucntion
+//request a input from the user and utilizes it to
+//make a welcome message when the web page be acessed
     let myName = prompt('Please enter your name:');
+    //a variable called myName receives the input of the user
+    //the prompt() function create a window in the browser, where
+    //it exibe a message e shows a box where the user should
+    //inform his name
     if (!myName) {
+    //this if statement exists because we want to prevent
+    //the user to do not inform anything and click "OK"
+    //making the name an empty or null information
+    //the name can not be null
         setUserName();
+        //if the user do not inform a name, the setUserName() function
+        //it will be ceaselesly called, until a valid name be informed
     } else {
+    //On the other hand, if the user informa valid name...
         localStorage.setItem('name', myName);
+        //the name it will be stored at the localStorage API, through
+        //the setItem propertie. To use this propertie, we must give
+        //a name to the information that will be stored (in this case,
+        //the name is 'name') and the value to be stored. So, the variable
+        //myName, informed by the user, will be stored at the localStorage API
         mySubTitle.textContent = 'Mozilla is cool, ' + myName;
+        //After that, the textual content of the mySubTitle element will
+        //be changed to the string 'Mozilla is cool' and the name informed
+        //by the user
     }
 }
 
