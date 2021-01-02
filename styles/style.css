@@ -4,7 +4,7 @@ html {
     font-size: 15px; /*The font size is 15 PIXELS;*/
     font-family: 'Montserrat', sans-serif; /*This is the family of the font; the information
     came from the Google Fonts web page;*/
-    background-color: #3D3A45
+    background-color: #3E825C
 }
 
 h1 {
@@ -55,7 +55,7 @@ p, li {
 body {
     width: 600px;
     margin: 5px auto;
-    background-color: #C7EDC0;
+    background-color: #6DE3A0;
     padding: 0px 20px 20px 20px;
     border: 5px solid #F7D9F0;
 }
