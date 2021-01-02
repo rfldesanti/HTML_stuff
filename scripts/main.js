@@ -7,6 +7,14 @@ let myTitle = document.querySelector('h1');
 //Here, the variable "myTitle" receive the value of the
 //'h1' document in the HTML document
 
+//Both of the variables above are receiving their values from
+//a search on the document HTML through the method querySelector
+//which is a method of the DOCUMENT interface - a interface of the
+//wWeb API DOM, that is a API that represents a structure of a document
+//in memory
+//The querySelector method returns the first element that
+//matches the specified selector
+
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
 
