@@ -47,7 +47,7 @@ p, li {
     selection - in this case, this selects only a certain part of the element, the
     first line of the class that is contained on the <p> element*/
     /*The result is very incredible and exciting!*/
-    font-size: 40px;
+    font-size: 30px;
     background-color: cadetblue;
     border: 5px solid white;
 }
