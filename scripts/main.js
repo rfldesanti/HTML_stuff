@@ -48,8 +48,13 @@ myImage.onclick = function() {
         //the textual content of the h1 element will change together
         //with the image
     } else {
+        //In case the statement on conditional test be false...
         myImage.setAttribute('src','images/troll.jpg');
+        //...the src attribute of the image will be alterated...
         myTitle.textContent = 'What a troll!';
+        //...as the textual content of the h1 element.
+        //All of this modifications inside the ELSE block
+        //utilizes the same properties seen in the if block
     }
 }
 
