@@ -1,5 +1,11 @@
 let myImage = document.querySelector('img');
+//'let' it is a declaration of a LOCAL VARIABLE. It's scope is limited
+//to the block for which it is declared.
+//Here, it is assigning the value of the 'img' element in the HTML document 
+//to the 'myImage" variable
 let myTitle = document.querySelector('h1');
+//Here, the variable "myTitle" receive the value of the
+//'h1' document in the HTML document
 
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
