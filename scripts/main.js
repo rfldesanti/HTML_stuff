@@ -30,8 +30,23 @@ myImage.onclick = function() {
     //refers to the img HTML element)
 
     if(mySrc === 'images/troll.jpg') {
+    //A conditional block is opened; the conditional test
+    //verifies if the src attirbute, that is responsible for
+    //the address of the image of the img element, matches
+    //with the value stored in the mySrc variable
         myImage.setAttribute('src','images/sapato.jpg');
+        //If the statement is true, the settings of the myImage variable
+        //is alterated through the setAttribute propertie; this propertie sets
+        //the value of an attribute on the specified element. If the attribute
+        //already existsm the value is updated; in this case, the src attribute
+        //is alterated to another image.
         myTitle.textContent = 'Sapatinho!';
+        //The textual content of the h1 element, to which myTitle variable
+        //makes reference, is alterated by the textContent propertie. This propertie
+        //come from the DOM Node interface, that is an abstract base class.
+        //Inside the conditional block, in being the statement true,
+        //the textual content of the h1 element will change together
+        //with the image
     } else {
         myImage.setAttribute('src','images/troll.jpg');
         myTitle.textContent = 'What a troll!';
