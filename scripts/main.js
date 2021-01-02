@@ -36,3 +36,15 @@ if(!localStorage.getItem('name')){
 myButton.onclick = function () {
     setUserName();    
 }
+
+var numtext = localStorage.getItem('name').length;
+
+while(numtext>0) {
+    if (numtext === localStorage.getItem('name').length) {
+        alert("Your name have " + numtext + " letters");
+        alert("Now I'm gonna reduce this number until reach to 0");
+    } else {
+        alert("Now the number is " + numtext); 
+    }
+    numtext = numtext - 1;
+}
