@@ -93,15 +93,25 @@ function setUserName() {
         //with 'name' as the identifier of the value
         mySubTitle.textContent = 'Mozilla is cool, ' + myName;
         //After that, the textual content of the mySubTitle element will
-        //be changed to the string 'Mozilla is cool' and the name informed
-        //by the user
+        //be changed to the string 'Mozilla is cool' and the value informed
+        //for the myName variable
     }
 }
 
 if(!localStorage.getItem('name')){
+//In this "if" block, the conditional verifies
+//if exists a value stored in the localStorage API
+//in a item called 'name'
+//if does not exists...
     setUserName();
+    //the setUserName() function is called
 } else {
+//If does exists
     let storedName = localStorage.getItem('name');
+    //a storedName variable is created, and it value
+    //is the one that exists in the localStorage;
+    //the value of the item is accessed by the getItem
+    //propertie
     mySubTitle.textContent = 'Mozilla is cool, ' + storedName;
 }
 
