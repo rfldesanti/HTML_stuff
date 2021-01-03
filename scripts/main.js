@@ -70,10 +70,10 @@ function setUserName() {
 //request a input from the user and utilizes it to
 //make a welcome message when the web page be acessed
     let myName = prompt('Please enter your name:');
-    //a variable called myName receives the input of the user
-    //the prompt() function create a window in the browser, where
-    //it exibe a message e shows a box where the user should
-    //inform his name
+    //a variable called myName receives the input of the user;
+    //the prompt() function creates a window in the browser, where
+    //the message inside the function is shown in a box
+    //where the user should inform his name
     if (!myName) {
     //this if statement exists because we want to prevent
     //the user to do not inform anything and click "OK"
