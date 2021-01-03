@@ -113,6 +113,9 @@ if(!localStorage.getItem('name')){
     //the value of the item is accessed by the getItem
     //propertie
     mySubTitle.textContent = 'Mozilla is cool, ' + storedName;
+    //the textual content of the mySubTitle variable - that is
+    //the <h2> element - is alterated to the string 'Mozilla is cool'
+    //and the value stored at the storedName variable
 }
 
 myButton.onclick = function () {
