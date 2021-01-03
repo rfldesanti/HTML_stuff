@@ -78,18 +78,19 @@ function setUserName() {
     //this "if" statement exists because we want to prevent
     //the user to do not inform any data and click "OK",
     //leaving the variable with no value, making the name an empty or
-    // null information; the name can not be null
+    //null information; the name can not be null
         setUserName();
         //if the user do not inform a name, the setUserName() function
         //it will be ceaselesly called, until a valid name be informed
     } else {
-    //On the other hand, if the user informa valid name...
+    //On the other hand, if the user inform a valid name...
         localStorage.setItem('name', myName);
         //the name it will be stored at the localStorage API, through
         //the setItem propertie. To use this propertie, we must give
         //a name to the information that will be stored (in this case,
         //the name is 'name') and the value to be stored. So, the variable
         //myName, informed by the user, will be stored at the localStorage API
+        //with 'name' as the identifier of the value
         mySubTitle.textContent = 'Mozilla is cool, ' + myName;
         //After that, the textual content of the mySubTitle element will
         //be changed to the string 'Mozilla is cool' and the name informed
