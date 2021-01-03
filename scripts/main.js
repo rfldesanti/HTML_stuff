@@ -75,10 +75,10 @@ function setUserName() {
     //the message inside the function is shown in a box
     //where the user should inform his name
     if (!myName) {
-    //this if statement exists because we want to prevent
-    //the user to do not inform anything and click "OK"
-    //making the name an empty or null information
-    //the name can not be null
+    //this "if" statement exists because we want to prevent
+    //the user to do not inform any information and click "OK",
+    //leaving the variable with no value, making the name an empty or
+    // null information; the name can not be null
         setUserName();
         //if the user do not inform a name, the setUserName() function
         //it will be ceaselesly called, until a valid name be informed
