@@ -10,7 +10,7 @@ let myTitle = document.querySelector('h1');
 //Both of the variables above receive their values from
 //a search on the document HTML through the method querySelector,
 //which is a method of the DOCUMENT interface - a interface of the
-//web API DOM, that is a API that represents a structure of a document
+//web API DOM, that is an API that represents a structure of a document
 //in memory
 //The querySelector method returns the FIRST ELEMENT that
 //matches the specified selector
@@ -61,12 +61,12 @@ myImage.onclick = function() {
 let myButton = document.querySelector('button');
 //Here, a variable called myButton receives the value returned
 //by the propertie querySelector, that returns the HTML element
-//"button"(<button></button>), as it seen early in this code
+//"button"(<button></button>), as it has been seen earlier in this code
 let mySubTitle = document.querySelector('h2');
 //The same thing with the variable mySubtitle
 
 function setUserName() {
-//Created a function called "setUserName". This fucntion
+//Created a function called "setUserName". This function
 //request a input from the user and utilizes it to
 //make a welcome message when the web page be acessed
     let myName = prompt('Please enter your name:');
